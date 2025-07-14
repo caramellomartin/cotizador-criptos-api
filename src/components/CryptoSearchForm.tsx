@@ -25,7 +25,7 @@ export default function CryptoSearchForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if(Object.values(pair).includes('')) {
-      setError('Todos los campos son obligatorios.')
+      setError('Todos los campos son obligatorios')
       return
     }
     setError('')

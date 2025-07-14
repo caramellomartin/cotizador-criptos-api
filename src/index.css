@@ -102,6 +102,18 @@ body {
   font-weight: 700;
 }
 
+.error-msg {
+  background-color: #e74c3c;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  font-weight: 600;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 .ticker-bar-wrapper {
   overflow: hidden;
   background-color: #182339;
