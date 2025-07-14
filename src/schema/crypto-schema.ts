@@ -27,3 +27,17 @@ export const CryptoPriceSchema = z.object({
   CHANGEPCT24HOUR: z.string(),
   LASTUPDATE: z.string()
 })
+
+export const TickerCryptoSchema = z.object({
+  CoinInfo : z.object({
+    Name: z.string()
+  }),
+  RAW : z.object({
+    USD: z.object({
+      PRICE: z.number(),
+      CHANGEPCT24HOUR: z.number()
+    })
+  }),
+})
+
+export const TickerCryptosSchema = z.array(TickerCryptoSchema)

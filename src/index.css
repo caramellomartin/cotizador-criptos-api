@@ -101,3 +101,53 @@ body {
 .result span{
   font-weight: 700;
 }
+
+.ticker-bar-wrapper {
+  overflow: hidden;
+  background-color: #182339;
+  color: white;
+  padding: 1rem 0;
+  border-bottom: 2px solid #61ECBC;
+}
+
+.ticker-bar {
+  display: flex;
+  gap: 3rem;
+  white-space: nowrap;
+  animation: tickerScroll 80s linear infinite;
+}
+
+.ticker-item {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.symbol {
+  font-weight: bold;
+  color: #61ECBC;
+}
+
+.price {
+  color: white;
+}
+
+.change {
+  font-weight: bold;
+}
+.positive {
+  color: #2ecc71;
+}
+.negative {
+  color: #e74c3c;
+}
+
+@keyframes tickerScroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-700%);
+  }
+}
