@@ -57,6 +57,7 @@ body {
 .form select {
   background-color: #ECEBEB;
   border: none;
+  cursor: pointer;
   border-radius: 1rem;
   font-size: 1.8rem;
   padding: 1rem;
